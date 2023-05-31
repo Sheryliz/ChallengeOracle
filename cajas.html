@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="cajas.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div>
+            <img class="titulo" src="logo.svg">
+        </div>
+        <div>
+            <textarea name="text" class="texto" id="inputTexto" cols="30" rows="80" placeholder="Ingresar el texto aquí"></textarea>
+        </div>
+        <div class="botones">
+            <p id="alerta">&#9888; Solo letras minusculas y sin acento</p>
+            <button type="button" name="button" id="btn-encriptar" onclick="Encriptar()">
+                Encriptar
+            </button>
+            <button type="button" name="button" id="btn-desencriptar" onclick="Desencriptar()">
+                Desencriptar
+            </button>         
+        </div>
+        <div class="imagen">
+            <img id="munheco" src="munheco.svg">
+        </div>
+        <div class="mensaje">
+            <p id="mensaje1">Ningún mensaje fue encontrado</p>
+            <p id="mensaje2">Ingresa el texto que deseas encriptar o desencriptar</p>
+            <button type="button" name="button" id="btn-clear" onclick="location.reload()">
+                Actualizar la pizarra
+            </button>
+        </div>
+    </body>
